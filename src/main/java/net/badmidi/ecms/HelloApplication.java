@@ -45,6 +45,22 @@ public class HelloApplication extends Application {
             ex.printStackTrace();
         }
     }
+
+    public void save() {
+        try {
+            FileOutputStream fos = new FileOutputStream("save.dat");
+            BufferedOutputStream bos = new BufferedOutputStream(fos);
+            ObjectOutputStream oos = new ObjectOutputStream(bos);
+
+            SPS dStorage = sps;
+
+            oos.writeObject(dStorage);
+            oos.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) {
         launch();
     }
