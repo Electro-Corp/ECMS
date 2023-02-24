@@ -1,6 +1,6 @@
 class Note{
 	public double pitch, duration;
-	public Note(double pitch, duration){
+	public Note(double pitch, double duration){
 		this.pitch = pitch;
 		this.duration = duration;
 	}
