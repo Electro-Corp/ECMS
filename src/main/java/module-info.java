@@ -4,6 +4,7 @@ module net.badmidi.ecms {
 
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
     opens net.badmidi.ecms to javafx.fxml;
     exports net.badmidi.ecms;
