@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
 import javax.sound.midi.MidiChannel;
-class SPS{
+public class SPS{
 	//public List<List<Note>> board = new ArrayList<List<Note>>;
 	public Note[][] board = new Note[127][100];
 	public int[] keyVals = new int[127];
 	public int[] pitches = new int[88];
 	//
 	public static final int SAMPLE_RATE = 16 * 1024;
+
 	//
 	public SPS(){
 		for(int i = 0; i < 88; i++)
