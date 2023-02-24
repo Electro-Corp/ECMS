@@ -1,3 +1,5 @@
+package net.badmidi.ecms.sps;
+
 class spsTest{
 	public static void main(String[] args){
 		SPS sp = new SPS();

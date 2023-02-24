@@ -1,3 +1,5 @@
+package net.badmidi.ecms.sps;
+
 import java.util.ArrayList;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
