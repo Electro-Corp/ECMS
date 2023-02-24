@@ -12,8 +12,9 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
+    <Button fx:id="play"/>
     <Label fx:id="badFileName"/>
     <TextField fx:id="filename">Enter Filename</TextField>
-    <Button text="Open File" onAction="#onOpenFileButtonClick"/>
+    <Button fx:id="openFile" text="Open File" onAction="#onOpenFileButtonClick"/>
 
 </VBox>
