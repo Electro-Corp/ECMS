@@ -8,17 +8,14 @@ import javax.sound.midi.Instrument;
 import javax.sound.midi.MidiChannel;
 public class SPS implements Serializable{
 	//public List<List<Note>> board = new ArrayList<List<Note>>;
-	public Note[][] board = new Note[127][100];
-	public int[] keyVals = new int[127];
-	int notes =0;
-	public int[] pitches = new int[88];
-	//
+	public Note[][] board = new Note[127][100]; // create keyboard with 100 notes per key
+	public int[] keyVals = new int[127]; // how many keys are already established in slot
+	int notes = 0; // total count of keys	//
 	private double testVal = 0;
 	public static final int SAMPLE_RATE = 16 * 1024;
 	//
 	public SPS(){
-		for(int i = 0; i < 88; i++)
-			pitches[i] = i;
+		// nothing to see here...
 	}
 	public void addNote(int key, double duration){
 		board[key][keyVals[key]++] = new Note(key,duration);
@@ -30,7 +27,9 @@ public class SPS implements Serializable{
 		MidiChannel[] channels = synth.getChannels();
 		MidiChannel channel = channels[0];
 		Instrument[] instr = synth.getDefaultSoundbank().getInstruments();
+		System.out.println("ECMS main play system called, data:");
         System.out.println("Instruments: "+instr.length);
+		System.out.println("Song data:");
 		System.out.println("Notes: "+notes);
         synth.loadInstrument(instr[0]);//load an instrument
 		//
