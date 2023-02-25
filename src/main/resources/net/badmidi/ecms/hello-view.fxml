@@ -12,9 +12,11 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Button fx:id="play"/>
+    <Button fx:id="newSPS" onAction="#onNewPressed" text="New File"/>
+    <Button fx:id="play" onAction="#onPlayPressed"/>
+    <Label fx:id="testVal"/>
     <Label fx:id="badFileName"/>
-    <TextField fx:id="filename">Enter Filename</TextField>
+    <TextField fx:id="filename"/>
     <Button fx:id="openFile" text="Open File" onAction="#onOpenFileButtonClick"/>
 
 </VBox>
