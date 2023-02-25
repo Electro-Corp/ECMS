@@ -32,8 +32,12 @@ public class AppController implements Serializable {
     private Button newSPS;
     @FXML
     private Button createBasic;
+    @FXML
+    private Button incTestVal;
+    @FXML
+    private Button save;
 
-
+    private String curName;
     @FXML
     protected void onOpenFileButtonClick() {
         if(load(filename.getCharacters().toString())) {
@@ -42,6 +46,7 @@ public class AppController implements Serializable {
             openFile.setVisible(false);
 
             play.setVisible(true);
+            curName = filename.getCharacters().toString();
         }
     }
 
@@ -69,6 +74,10 @@ public class AppController implements Serializable {
         filename.managedProperty().bind(filename.visibleProperty());
         badFileName.managedProperty().bind(badFileName.visibleProperty());
         testVal.managedProperty().bind(testVal.visibleProperty());
+        // incTestVal.managedProperty().bind(incTestVal.visibleProperty());
+        // incTestVal.visibleProperty().bind(play.visibleProperty());
+        save.managedProperty().bind(save.visibleProperty());
+        save.visibleProperty().bind(play.visibleProperty());
     }
     public boolean load(String filename) {
         if(filename==null) {
@@ -132,6 +141,18 @@ public class AppController implements Serializable {
         
         save(filename.getCharacters().toString());
         load(filename.getCharacters().toString());
+        onOpenFileButtonClick();
+        newSPS.setVisible(false);
+    }
+
+    @FXML
+    public void onIncTestValPressed() {
+        sps.incTestVal();
+    }
+    @FXML
+    public void onSavePressed() {
+        save(curName);
+        // TODO: Allow user to choose save loc/name
     }
     public void demo(){
         sps = new SPS();
@@ -140,6 +161,8 @@ public class AppController implements Serializable {
 		sps.addNote(62,2);
         save("demo.sps");
     }
+
+
    
 
 
