@@ -12,6 +12,7 @@ public class SPS {
 	int notes =0;
 	public int[] pitches = new int[88];
 	//
+	private double testVal = 0;
 	public static final int SAMPLE_RATE = 16 * 1024;
 	//
 	public SPS(){
@@ -55,5 +56,12 @@ public class SPS {
 		}
 	}
 
+	public double getTestVal() {
+		return testVal;
+	}
+
+	public void incTestVal() {
+		testVal++;
+	}
 
 }
