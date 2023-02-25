@@ -6,12 +6,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import net.badmidi.ecms.sps.SPS;
+import net.badmidi.ecms.sps.SPSFile;
 
 import java.io.*;
 
 public class AppController implements Serializable {
 
     SPS sps;
+    SPSFile spsFile;
 
     @FXML
     private Label testVal;
@@ -85,11 +87,13 @@ public class AppController implements Serializable {
         if(filename==null) {
             filename= "default.sps";
         }
+        updateSPSFile();
         try {
             FileOutputStream fos = new FileOutputStream(filename);
             BufferedOutputStream bos = new BufferedOutputStream(fos);
             ObjectOutputStream oos = new ObjectOutputStream(bos);
-            SPS dStorage;
+
+            SPSFile dStorage;
 
             if(sps!=null)
                  dStorage = sps;
@@ -113,13 +117,17 @@ public class AppController implements Serializable {
             {
                 return name.equals(filename.getCharacters().toString());
             }});
-        if(matches != null){
-        if(matches.length > 0) {
+
+        if(matches != null && matches.length > 0) {
             return;
         }
         }
         save(filename.getCharacters().toString());
         load(filename.getCharacters().toString());
+    }
+
+    public void updateSPSFile() {
+        spsFile.
     }
 
 
