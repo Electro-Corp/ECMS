@@ -55,8 +55,12 @@ public class SPS implements Serializable{
 		{
 		}
 	}
-	public int goof(){
-		return 3;
+	public double goof(){
+		return testVal;
+	}
+
+	public void incTestVal() {
+		testVal++;
 	}
 	
 
