@@ -44,7 +44,7 @@ public class AppController implements Serializable {
     @FXML
     protected void onPlayPressed() {
         testVal.setVisible(true);
-        testVal.setText(String.valueOf(sps.getTestVal()));
+        testVal.setText(String.valueOf(sps.goof()));
     }
 
     public void initialize() {
@@ -113,9 +113,10 @@ public class AppController implements Serializable {
             {
                 return name.equals(filename.getCharacters().toString());
             }});
-
+        if(matches != null){
         if(matches.length > 0) {
             return;
+        }
         }
         save(filename.getCharacters().toString());
         load(filename.getCharacters().toString());

@@ -1,11 +1,12 @@
 package net.badmidi.ecms.sps;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
 import javax.sound.midi.Instrument;
 import javax.sound.midi.MidiChannel;
-public class SPS {
+public class SPS implements Serializable{
 	//public List<List<Note>> board = new ArrayList<List<Note>>;
 	public Note[][] board = new Note[127][100];
 	public int[] keyVals = new int[127];
@@ -55,7 +56,9 @@ public class SPS {
 		{
 		}
 	}
-
+	public int goof(){
+		return 3;
+	}
 	
 
 }
