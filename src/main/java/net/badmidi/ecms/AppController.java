@@ -30,6 +30,8 @@ public class AppController implements Serializable {
     private Button play;
     @FXML
     private Button newSPS;
+    @FXML
+    private Button createBasic;
 
 
     @FXML
@@ -47,6 +49,10 @@ public class AppController implements Serializable {
     protected void onPlayPressed() {
         testVal.setVisible(true);
         testVal.setText(String.valueOf(sps.goof()));
+        if(sps != null){
+            try{
+            sps.playMusic();}catch(Exception e){}
+        }
     }
 
     public void initialize() {
@@ -55,6 +61,8 @@ public class AppController implements Serializable {
         play.setVisible(false);
         play.setText("Play (NO WORK)");
         testVal.setVisible(false);
+        createBasic.setVisible(true);
+        createBasic.setText("Generate test sps file with sounds");
         // for each element that will be "removed" (hidden)
         openFile.managedProperty().bind(openFile.visibleProperty());
         play.managedProperty().bind(play.visibleProperty());
@@ -125,7 +133,13 @@ public class AppController implements Serializable {
         save(filename.getCharacters().toString());
         load(filename.getCharacters().toString());
     }
-
+    public void demo(){
+        sps = new SPS();
+		sps.addNote(60,3);
+		sps.addNote(61,1);
+		sps.addNote(62,2);
+        save("demo.sps");
+    }
    
 
 

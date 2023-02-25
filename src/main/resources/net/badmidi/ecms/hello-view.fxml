@@ -18,5 +18,5 @@
     <Label fx:id="badFileName"/>
     <TextField fx:id="filename"/>
     <Button fx:id="openFile" text="Open File" onAction="#onOpenFileButtonClick"/>
-
+    <Button fx:id="createBasic" text="Create demo" onAction="#demo"/>
 </VBox>

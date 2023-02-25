@@ -1,6 +1,8 @@
 package net.badmidi.ecms.sps;
 
-public class Note{
+import java.io.Serializable;
+
+public class Note implements Serializable{
 	public double pitch, duration;
 	public Note(double pitch, double duration){
 		this.pitch = pitch;
