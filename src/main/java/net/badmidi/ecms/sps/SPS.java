@@ -19,8 +19,8 @@ public class SPS {
 		for(int i = 0; i < 88; i++)
 			pitches[i] = i;
 	}
-	public void addNote(int key){
-		board[key][keyVals[key]++] = new Note(key,1);
+	public void addNote(int key, double duration){
+		board[key][keyVals[key]++] = new Note(key,duration);
 		notes++;
 	}
 	public void playMusic() throws Exception{
@@ -33,13 +33,13 @@ public class SPS {
 		System.out.println("Notes: "+notes);
         synth.loadInstrument(instr[0]);//load an instrument
 		//
-		for(int i = 0; i < notes; i++){
+		for(int i = 0; i < 100; i++){
 			for(int g = 0; g < 127; g++){
-				if(board[g][0] != null){
-					System.out.println(board[g][0].pitch +" , with current g is "+g);
-					channel.noteOn((int)board[g][0].pitch, 100);
+				if(board[g][i] != null){
+					System.out.println(board[g][i].pitch +" , with current g is "+g);
+					channel.noteOn((int)board[g][i].pitch, 100);
 					sleep((int)board[g][0].duration * 1000);
-					channel.noteOff((int)board[g][0].pitch);
+					channel.noteOff((int)board[g][i].pitch);
 				}
 			}
 		}
@@ -56,12 +56,6 @@ public class SPS {
 		}
 	}
 
-	public double getTestVal() {
-		return testVal;
-	}
-
-	public void incTestVal() {
-		testVal++;
-	}
+	
 
 }
