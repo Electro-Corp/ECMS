@@ -117,7 +117,7 @@ public class AppController implements Serializable {
         if(matches.length > 0) {
             return;
         }
-        save(null);
+        save(filename.getCharacters().toString());
         load(filename.getCharacters().toString());
     }
 
