@@ -147,7 +147,7 @@ public class AppController implements Serializable {
 
     @FXML
     public void onIncTestValPressed() {
-        sps.incTestVal();
+       // sps.incTestVal();
     }
     @FXML
     public void onSavePressed() {
