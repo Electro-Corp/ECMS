@@ -87,13 +87,13 @@ public class AppController implements Serializable {
         if(filename==null) {
             filename= "default.sps";
         }
-        updateSPSFile();
+        //updateSPSFile();
         try {
             FileOutputStream fos = new FileOutputStream(filename);
             BufferedOutputStream bos = new BufferedOutputStream(fos);
             ObjectOutputStream oos = new ObjectOutputStream(bos);
 
-            SPSFile dStorage;
+            SPS dStorage;
 
             if(sps!=null)
                  dStorage = sps;
@@ -121,14 +121,12 @@ public class AppController implements Serializable {
         if(matches != null && matches.length > 0) {
             return;
         }
-        }
+        
         save(filename.getCharacters().toString());
         load(filename.getCharacters().toString());
     }
 
-    public void updateSPSFile() {
-        spsFile.
-    }
+   
 
 
 }
