@@ -82,8 +82,4 @@ public class AppController {
         }
     }
 
-    public void fileLoaded() {
-
-    }
-
 }
