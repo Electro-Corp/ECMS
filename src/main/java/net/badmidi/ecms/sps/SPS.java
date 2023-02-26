@@ -21,7 +21,8 @@ public class SPS implements Serializable{
 		board[key][keyVals[key]++] = new Note(key,duration);
 		notes++;
 	}
-	public void playMusic() throws Exception{
+	// play music
+	public void playMusic(int pos) throws Exception{
 		Synthesizer synth = MidiSystem.getSynthesizer();
 		synth.open();
 		MidiChannel[] channels = synth.getChannels();
@@ -32,8 +33,9 @@ public class SPS implements Serializable{
 		System.out.println("Song data:");
 		System.out.println("Notes: "+notes);
         synth.loadInstrument(instr[0]);//load an instrument
-		//
-		for(int i = 0; i < 100; i++){
+		// loop over the length of the song
+		for(int i = pos; i < board[0].length; i++){
+			// loop over every key
 			for(int g = 0; g < 127; g++){
 				if(board[g][i] != null){
 					System.out.println(board[g][i].pitch +" , with current g is "+g);
@@ -55,9 +57,16 @@ public class SPS implements Serializable{
 		{
 		}
 	}
+	// testing purposes
 	public int goof(){
 		return testVal;
 	}
-	
+	public void resizeSong(int newSize){
+		//omg memory managment???
+		Note[][] tmp = new Note[127][newSize];
+		for(int i = 0; i < board[0].length; i++){
+			tmp[i] = board[i];
+		}
+	}
 
 }

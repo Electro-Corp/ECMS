@@ -7,7 +7,7 @@ public class spsTest{
 		sp.addNote(61,1);
 		sp.addNote(62,2);
 		try{
-			sp.playMusic();
+			sp.playMusic(0);
 		}catch(Exception e){
 			e.printStackTrace();
 			System.out.println("FAIL");

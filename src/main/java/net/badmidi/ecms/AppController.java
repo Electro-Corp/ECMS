@@ -56,7 +56,7 @@ public class AppController implements Serializable {
         testVal.setText(String.valueOf(sps.goof()));
         if(sps != null){
             try{
-            sps.playMusic();}catch(Exception e){}
+            sps.playMusic(0);}catch(Exception e){}
         }
     }
 
@@ -94,8 +94,13 @@ public class AppController implements Serializable {
         } catch (FileNotFoundException fnf) {
             badFileName.setText("That File Does Not Exists");
             return false;
-        } catch (ClassNotFoundException | IOException ex) {
-            ex.printStackTrace();
+        } catch (ClassNotFoundException egx) {
+            //egx.printStackTrace();
+            return false;
+        } catch(InvalidClassException error){
+            badFileName.setText("File created with an earlier build of ECMS");
+            return false;
+        } catch(IOException e){
             return false;
         }
     }
@@ -132,7 +137,8 @@ public class AppController implements Serializable {
         File[] matches = dir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name)
             {
-                return name.equals(filename.getCharacters().toString());
+                return name.equals
+                (filename.getCharacters().toString());
             }});
 
         if(matches != null && matches.length > 0) {
@@ -153,12 +159,14 @@ public class AppController implements Serializable {
     public void onSavePressed() {
         save(curName);
         // TODO: Allow user to choose save loc/name
+        
     }
     public void demo(){
         sps = new SPS();
 		sps.addNote(60,3);
 		sps.addNote(61,1);
 		sps.addNote(62,2);
+        
         save("demo.sps");
     }
 
