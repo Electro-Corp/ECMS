@@ -4,8 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import net.badmidi.ecms.sps.SPS;
-
 import java.io.*;
 import java.io.IOException;
 
