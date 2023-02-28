@@ -2,6 +2,7 @@ package net.badmidi.ecms;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -14,8 +15,10 @@ public class AppController implements Serializable {
 
     SPS sps;
 
-    @FXML
-    private Label testVal;
+
+    // Load menu
+    Group loadMenu = new Group();
+
     @FXML
     private Label welcomeText;
     @FXML
@@ -24,15 +27,13 @@ public class AppController implements Serializable {
     private TextField filename;
     @FXML
     private Button openFile;
-
-    @FXML
-    private Button play;
     @FXML
     private Button newSPS;
     @FXML
     private Button createBasic;
+
     @FXML
-    private Button incTestVal;
+    private Button play;
     @FXML
     private Button save;
 
@@ -51,8 +52,6 @@ public class AppController implements Serializable {
 
     @FXML
     protected void onPlayPressed() {
-        testVal.setVisible(true);
-        testVal.setText(String.valueOf(sps.goof()));
         if(sps != null){
             try{
             sps.playMusic(0);}catch(Exception e){}
@@ -64,17 +63,18 @@ public class AppController implements Serializable {
         filename.setAccessibleText("Filename");
         play.setVisible(false);
         play.setText("Play (NO WORK)");
-        testVal.setVisible(false);
         createBasic.setVisible(true);
         createBasic.setText("Generate test sps file with sounds");
+
         // for each element that will be "removed" (hidden)
-        openFile.managedProperty().bind(openFile.visibleProperty());
+        loadMenu.getChildren().add(openFile);
+        loadMenu.getChildren().add(badFileName);
+        loadMenu.getChildren().add(filename);
+
+        loadMenu.managedProperty().bind(loadMenu.visibleProperty());
+
+        
         play.managedProperty().bind(play.visibleProperty());
-        filename.managedProperty().bind(filename.visibleProperty());
-        badFileName.managedProperty().bind(badFileName.visibleProperty());
-        testVal.managedProperty().bind(testVal.visibleProperty());
-        // incTestVal.managedProperty().bind(incTestVal.visibleProperty());
-        // incTestVal.visibleProperty().bind(play.visibleProperty());
         save.managedProperty().bind(save.visibleProperty());
         save.visibleProperty().bind(play.visibleProperty());
     }
