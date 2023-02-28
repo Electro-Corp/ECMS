@@ -11,7 +11,6 @@ public class SPS implements Serializable{
 	public Note[][] board = new Note[127][100]; // create keyboard with 100 notes per key
 	public int[] keyVals = new int[127]; // how many keys are already established in slot
 	int notes = 0; // total count of keys	//
-	public int testVal = 0;
 	public static final int SAMPLE_RATE = 16 * 1024;
 	//
 	public SPS(){
@@ -57,10 +56,7 @@ public class SPS implements Serializable{
 		{
 		}
 	}
-	// testing purposes
-	public int goof(){
-		return testVal;
-	}
+	
 	public void resizeSong(int newSize){
 		//omg memory managment???
 		Note[][] tmp = new Note[127][newSize];
