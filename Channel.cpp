@@ -5,7 +5,8 @@ void ECMS::VolumeSlider::volumeCallBack(Fl_Widget* w, void * p){
 }
 
 void ECMS::VolumeSlider::volCallBackInternal(Fl_Widget* w, void* v){
-
+	Fl_Value_Slider* s = (Fl_Value_Slider*)w;
+	this->volumeValue = s->value();
 }
 
 ECMS::Channel::Channel(int id) {
@@ -16,8 +17,6 @@ void ECMS::Channel::initChannelUI(Fl_Group* group, VolumeSlider* slider, Fl_Dial
 	this->channelGroup = group;
 	this->volume = slider;
 	this->pan = dial;
-
-	//this->volume->callback((Fl_Callback*)volumeSliderUpdate);
 	
 	channelGroup->add(volume);
 	channelGroup->add(dial);
