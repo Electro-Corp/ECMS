@@ -7,6 +7,7 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Group.h>
+#include <FL/Fl_Dial.H>
 
 #include "Mixer.h"
 
@@ -20,8 +21,10 @@ namespace UI {
 		Fl_Group* mixerGroup;
 		Fl_Group* browserGroup;
 		Fl_Group* arrangmentGroup;
+
 	public:
 		Window(std::string name, int width, int height, ECMS::Mixer* mixer);
+
 
 	};
 }
