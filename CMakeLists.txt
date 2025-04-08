@@ -11,7 +11,7 @@ endif()
 
 project ("ECMS")
 
-include(E:/Electro/vcpkg/scripts/buildsystems/vcpkg.cmake)
+#include(E:/Electro/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 find_package(FLTK REQUIRED CONFIG)
 

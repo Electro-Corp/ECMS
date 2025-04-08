@@ -10,9 +10,13 @@
 namespace ECMS {
 	class Mixer {
 	private:
-		std::vector<ECMS::Channel> channels;
+		std::vector<ECMS::Channel*> channels;
 	public:
 		Mixer(int channels);
+
+		std::vector<ECMS::Channel*> getChannels(){
+			return channels;
+		}
 	};
 }
 

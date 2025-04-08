@@ -8,6 +8,8 @@
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Group.h>
 
+#include "Mixer.h"
+
 // Macros for window sizes n stuff
 #define MIXER_HEIGHT 200
 
@@ -19,7 +21,8 @@ namespace UI {
 		Fl_Group* browserGroup;
 		Fl_Group* arrangmentGroup;
 	public:
-		Window(std::string name, int width, int height);
+		Window(std::string name, int width, int height, ECMS::Mixer* mixer);
+
 	};
 }
 

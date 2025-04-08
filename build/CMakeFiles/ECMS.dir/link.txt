@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ECMS.dir/ECMS.cpp.o CMakeFiles/ECMS.dir/Window.cpp.o CMakeFiles/ECMS.dir/Channel.cpp.o CMakeFiles/ECMS.dir/Mixer.cpp.o -o ECMS  -lfltk -lfltk_gl -lfltk_forms -lfltk_images 
