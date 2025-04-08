@@ -22,7 +22,7 @@ UI::Window::Window(std::string name, int width, int height, ECMS::Mixer* mixer) 
 	for (int i = 0; i < mixer->getChannels().size(); i++) {
 		// Volume slider
 		Fl_Group* channelGroup = new Fl_Group(i * sliderWidth + bGroupW, height - MIXER_HEIGHT, sliderWidth, height - MIXER_HEIGHT);
-		Fl_Slider* volSlider = new Fl_Slider(i * sliderWidth + bGroupW, height - MIXER_HEIGHT, sliderWidth / 2, height - MIXER_HEIGHT);
+		ECMS::VolumeSlider* volSlider = new ECMS::VolumeSlider(i * sliderWidth + bGroupW, height - MIXER_HEIGHT, sliderWidth / 2, height - MIXER_HEIGHT, "Volume");
 		Fl_Dial* panDial = new Fl_Dial(i * sliderWidth + bGroupW + (sliderWidth / 2) + 1, height - MIXER_HEIGHT, sliderWidth / 4, sliderWidth / 4);
 		channelGroup->box(FL_GTK_DOWN_BOX);
 		mixer->getChannels()[i]->initChannelUI(channelGroup, volSlider, panDial);

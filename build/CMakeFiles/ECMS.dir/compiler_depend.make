@@ -3,7 +3,16 @@
 
 CMakeFiles/ECMS.dir/Channel.cpp.o: ../Channel.cpp \
   /usr/include/stdc-predef.h \
-  ../Channel.h
+  ../Channel.h \
+  /usr/include/Fl/Fl_Slider.h \
+  /usr/include/Fl/Fl_Valuator.H \
+  /usr/include/Fl/Fl_Widget.H \
+  /usr/include/Fl/Enumerations.H \
+  /usr/include/Fl/Fl_Export.H \
+  /usr/include/FL/Fl_Group.H \
+  /usr/include/FL/Fl_Dial.H \
+  /usr/include/FL/Fl_Value_Slider.H \
+  /usr/include/FL/Fl_Slider.H
 
 CMakeFiles/ECMS.dir/ECMS.cpp.o: ../ECMS.cpp \
   /usr/include/stdc-predef.h \
@@ -206,6 +215,8 @@ CMakeFiles/ECMS.dir/ECMS.cpp.o: ../ECMS.cpp \
   /usr/include/FL/Fl_Group.H \
   /usr/include/FL/Fl_Widget.H \
   /usr/include/FL/Fl_Group.h \
+  /usr/include/FL/Fl_Dial.H \
+  /usr/include/FL/Fl_Valuator.H \
   ../Mixer.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -214,7 +225,9 @@ CMakeFiles/ECMS.dir/ECMS.cpp.o: ../ECMS.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   ../Channel.h \
   /usr/include/Fl/Fl_Slider.h \
-  /usr/include/Fl/Fl_Valuator.H
+  /usr/include/FL/Fl_Group.H \
+  /usr/include/FL/Fl_Value_Slider.H \
+  /usr/include/FL/Fl_Slider.H
 
 CMakeFiles/ECMS.dir/Mixer.cpp.o: ../Mixer.cpp \
   /usr/include/stdc-predef.h \
@@ -314,7 +327,16 @@ CMakeFiles/ECMS.dir/Mixer.cpp.o: ../Mixer.cpp \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../Channel.h
+  ../Channel.h \
+  /usr/include/Fl/Fl_Slider.h \
+  /usr/include/Fl/Fl_Valuator.H \
+  /usr/include/Fl/Fl_Widget.H \
+  /usr/include/Fl/Enumerations.H \
+  /usr/include/Fl/Fl_Export.H \
+  /usr/include/FL/Fl_Group.H \
+  /usr/include/FL/Fl_Dial.H \
+  /usr/include/FL/Fl_Value_Slider.H \
+  /usr/include/FL/Fl_Slider.H
 
 CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
   /usr/include/stdc-predef.h \
@@ -487,6 +509,8 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
   /usr/include/FL/Fl_Group.H \
   /usr/include/FL/Fl_Widget.H \
   /usr/include/FL/Fl_Group.h \
+  /usr/include/FL/Fl_Dial.H \
+  /usr/include/FL/Fl_Valuator.H \
   ../Mixer.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -495,10 +519,10 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   ../Channel.h \
   /usr/include/Fl/Fl_Slider.h \
-  /usr/include/Fl/Fl_Valuator.H
+  /usr/include/FL/Fl_Group.H \
+  /usr/include/FL/Fl_Value_Slider.H \
+  /usr/include/FL/Fl_Slider.H
 
-
-/usr/include/Fl/Fl_Slider.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -508,8 +532,6 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/c++/11/vector:
 
-/usr/include/FL/Fl_Group.H:
-
 /usr/include/FL/Enumerations.H:
 
 /usr/include/c++/11/bits/istream.tcc:
@@ -517,10 +539,6 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/Fl/Fl_Valuator.H:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/FL/Fl_Widget.H:
 
@@ -608,25 +626,23 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/stdlib.h:
-
 /usr/include/c++/11/bits/stl_algo.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+/usr/include/c++/11/ext/alloc_traits.h:
 
-/usr/include/c++/11/streambuf:
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/c++/11/bits/functexcept.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+../Window.cpp:
 
-/usr/include/c++/11/bits/string_view.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/c++/11/numbers:
+/usr/include/c++/11/string:
 
-/usr/include/c++/11/bits/hash_bytes.h:
+/usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/c++/11/typeinfo:
 
@@ -658,83 +674,35 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/c++/11/cwchar:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/c++/11/exception:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/c++/11/bits/uniform_int_dist.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/include/wchar.h:
 
-../ECMS.h:
+/usr/include/FL/Fl_Value_Slider.H:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/c++/11/bits/stl_construct.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/c++/11/bits/locale_facets.tcc:
 
-/usr/include/c++/11/type_traits:
+/usr/include/Fl/Fl_Valuator.H:
 
-/usr/include/FL/Fl.H:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-../Window.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/string:
-
-/usr/include/c++/11/bits/ostream.tcc:
-
-/usr/include/c++/11/clocale:
+/usr/include/FL/Fl_Group.H:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/c++/11/bits/string_view.tcc:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/c++/11/numbers:
 
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/features.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/c++/11/bits/iterator_concepts.h:
-
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/c++/11/concepts:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/FL/Fl_Export.H:
-
-/usr/include/c++/11/ostream:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
+/usr/include/c++/11/bits/hash_bytes.h:
 
 ../ECMS.cpp:
 
@@ -744,53 +712,45 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/c++/11/ios:
 
-/usr/include/c++/11/iosfwd:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/c++/11/compare:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/c++/11/bits/allocator.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
-/usr/include/c++/11/bits/allocator.h:
+/usr/include/Fl/Enumerations.H:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/c++/11/iosfwd:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/features-time64.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/linux/errno.h:
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+../ECMS.h:
+
+/usr/include/Fl/Fl_Slider.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/Fl/Fl_Export.H:
+
+/usr/include/c++/11/type_traits:
+
+/usr/include/FL/Fl.H:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+/usr/include/c++/11/clocale:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -800,11 +760,101 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/c++/11/bits/uniform_int_dist.h:
+/usr/include/features-time64.h:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/include/linux/errno.h:
 
-/usr/include/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/FL/Fl_Valuator.H:
+
+/usr/include/c++/11/exception:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/c++/11/backward/binders.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/c++/11/debug/debug.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/c++/11/bits/iterator_concepts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/FL/Fl_Export.H:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/FL/Fl_Slider.H:
+
+/usr/include/Fl/Fl_Widget.H:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/c++/11/cwchar:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/c++/11/streambuf:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/c++/11/ext/type_traits.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/c++/11/compare:
+
+/usr/include/c++/11/concepts:
 
 /usr/include/c++/11/cstdlib:
 
@@ -830,13 +880,11 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
-/usr/include/c++/11/bits/stl_construct.h:
-
-/usr/include/c++/11/debug/debug.h:
-
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/c++/11/cstdint:
+
+/usr/include/FL/Fl_Dial.H:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -915,11 +963,3 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:

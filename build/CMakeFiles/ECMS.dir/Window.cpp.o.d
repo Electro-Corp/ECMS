@@ -141,9 +141,11 @@ CMakeFiles/ECMS.dir/Window.cpp.o: /home/segfault/ECMS/Window.cpp \
  /usr/include/FL/Enumerations.H /usr/include/FL/Fl_Export.H \
  /usr/include/FL/Fl_Window.H /usr/include/FL/Fl_Group.H \
  /usr/include/FL/Fl_Widget.H /usr/include/FL/Fl_Group.h \
+ /usr/include/FL/Fl_Dial.H /usr/include/FL/Fl_Valuator.H \
  /home/segfault/ECMS/Mixer.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /home/segfault/ECMS/Channel.h \
- /usr/include/Fl/Fl_Slider.h /usr/include/Fl/Fl_Valuator.H
+ /usr/include/Fl/Fl_Slider.h /usr/include/FL/Fl_Group.H \
+ /usr/include/FL/Fl_Value_Slider.H /usr/include/FL/Fl_Slider.H
