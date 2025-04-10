@@ -9,7 +9,7 @@ int main()
 {
 	ECMS::Mixer mixer(10);
 
-	UI::Window* mainWindow = new UI::Window("ECMS v0.1", 1366, 768, &mixer);
+	UI::Window* mainWindow = new UI::Window("ECMS v0.1", 1296, 704, &mixer);
 	mainWindow->show();
 
 	return Fl::run();
