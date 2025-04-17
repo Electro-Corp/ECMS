@@ -217,6 +217,10 @@ CMakeFiles/ECMS.dir/ECMS.cpp.o: ../ECMS.cpp \
   /usr/include/FL/Fl_Group.h \
   /usr/include/FL/Fl_Dial.H \
   /usr/include/FL/Fl_Valuator.H \
+  /usr/include/FL/Fl_Menu_Bar.H \
+  /usr/include/FL/Fl_Menu_.H \
+  /usr/include/FL/Fl_Menu_Item.H \
+  /usr/include/FL/Fl_Image.H \
   ../Mixer.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -511,6 +515,10 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
   /usr/include/FL/Fl_Group.h \
   /usr/include/FL/Fl_Dial.H \
   /usr/include/FL/Fl_Valuator.H \
+  /usr/include/FL/Fl_Menu_Bar.H \
+  /usr/include/FL/Fl_Menu_.H \
+  /usr/include/FL/Fl_Menu_Item.H \
+  /usr/include/FL/Fl_Image.H \
   ../Mixer.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -531,6 +539,10 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/vector:
+
+/usr/include/FL/Fl_Menu_Item.H:
+
+/usr/include/FL/Fl_Menu_.H:
 
 /usr/include/FL/Enumerations.H:
 
@@ -848,6 +860,8 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
+/usr/include/FL/Fl_Image.H:
+
 /usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/c++/11/bits/stl_function.h:
@@ -895,6 +909,8 @@ CMakeFiles/ECMS.dir/Window.cpp.o: ../Window.cpp \
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/FL/Fl_Menu_Bar.H:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 

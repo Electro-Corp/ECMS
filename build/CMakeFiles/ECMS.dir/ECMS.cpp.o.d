@@ -160,7 +160,9 @@ CMakeFiles/ECMS.dir/ECMS.cpp.o: /home/segfault/ECMS/ECMS.cpp \
  /usr/include/FL/Fl_Export.H /usr/include/FL/Fl_Window.H \
  /usr/include/FL/Fl_Group.H /usr/include/FL/Fl_Widget.H \
  /usr/include/FL/Fl_Group.h /usr/include/FL/Fl_Dial.H \
- /usr/include/FL/Fl_Valuator.H /home/segfault/ECMS/Mixer.h \
+ /usr/include/FL/Fl_Valuator.H /usr/include/FL/Fl_Menu_Bar.H \
+ /usr/include/FL/Fl_Menu_.H /usr/include/FL/Fl_Menu_Item.H \
+ /usr/include/FL/Fl_Image.H /home/segfault/ECMS/Mixer.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
